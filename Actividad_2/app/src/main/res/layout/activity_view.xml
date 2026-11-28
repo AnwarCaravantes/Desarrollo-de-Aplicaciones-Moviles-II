@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F2F7"
+    tools:context=".View">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp">
+
+            <!-- HEADER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/iVLC"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:contentDescription="Logo Coppel"
+                    app:srcCompat="@drawable/logocop" />
+
+                <TextView
+                    android:id="@+id/tVAC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:text="Audio Coppel"
+                    android:textColor="#3F51B5"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- DESCRIPTION -->
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:lineSpacingExtra="2dp"
+                android:text="Encuentra aquí la gran variedad de música que Coppel selecciona para ti. No olvides compartir para recibir grandes recompensas."
+                android:textColor="#3F51B5"
+                android:textSize="16sp" />
+
+            <!-- SONG 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/play1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Reproducir canción 1"
+                    app:srcCompat="@drawable/play" />
+
+                <TextView
+                    android:id="@+id/tVSong1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="¡Atrápalos Ya! - Pokémon"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iVDownload1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Descargar canción 1"
+                    app:srcCompat="@drawable/download" />
+
+                <ImageButton
+                    android:id="@+id/share1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Compartir" />
+
+                <ImageButton
+                android:id="@+id/bluetooth1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/bluetooth"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitCenter"
+                android:contentDescription="Bluetooth" />
+
+
+            </LinearLayout>
+
+
+            <!-- SONG 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/play2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Reproducir canción 2"
+                    app:srcCompat="@drawable/play" />
+
+                <TextView
+                    android:id="@+id/tVSong2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="Bling-Bang-Bang-Born - Mashle"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iVDownload2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Descargar canción 2"
+                    app:srcCompat="@drawable/download" />
+
+                <ImageButton
+                    android:id="@+id/share2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Compartir" />
+
+                <ImageButton
+                    android:id="@+id/bluetooth2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/bluetooth"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Bluetooth" />
+            </LinearLayout>
+
+            <!-- SONG 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/play3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Reproducir canción 3"
+                    app:srcCompat="@drawable/play" />
+
+                <TextView
+                    android:id="@+id/tVSong3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="Blue Bird - Naruto"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iVDownload3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Descargar canción 3"
+                    app:srcCompat="@drawable/download" />
+
+                <ImageButton
+                    android:id="@+id/share3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Compartir" />
+
+                <ImageButton
+                    android:id="@+id/bluetooth3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/bluetooth"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Bluetooth" />
+            </LinearLayout>
+
+            <!-- SONG 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/play4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Reproducir canción 4"
+                    app:srcCompat="@drawable/play" />
+
+                <TextView
+                    android:id="@+id/tVSong4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="Chala Head Chala - DBZ"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iVDownload4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Descargar canción 4"
+                    app:srcCompat="@drawable/download" />
+
+                <ImageButton
+                    android:id="@+id/share4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Compartir" />
+
+                <ImageButton
+                    android:id="@+id/bluetooth4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/bluetooth"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Bluetooth" />
+            </LinearLayout>
+
+            <!-- SONG 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/play5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Reproducir canción 5"
+                    app:srcCompat="@drawable/play" />
+
+                <TextView
+                    android:id="@+id/tVSong5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="El Poder Nuestro Es - DBZ"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iVDownload5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Descargar canción 5"
+                    app:srcCompat="@drawable/download" />
+
+                <ImageButton
+                    android:id="@+id/share5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Compartir" />
+
+                <ImageButton
+                    android:id="@+id/bluetooth5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/bluetooth"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Bluetooth" />
+            </LinearLayout>
+
+            <!-- SONG 6 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/play6"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Reproducir canción 6"
+                    app:srcCompat="@drawable/play" />
+
+                <TextView
+                    android:id="@+id/tVSong6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="Mariposa - Digimon"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iVDownload6"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Descargar canción 6"
+                    app:srcCompat="@drawable/download" />
+
+                <ImageButton
+                    android:id="@+id/share6"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Compartir" />
+
+                <ImageButton
+                    android:id="@+id/bluetooth6"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/bluetooth"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Bluetooth" />
+            </LinearLayout>
+
+            <!-- SONG 7 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/play7"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Reproducir canción 7"
+                    app:srcCompat="@drawable/play" />
+
+                <TextView
+                    android:id="@+id/tVSong7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="Mi Corazón Encantado - Dragon Ball GT"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iVDownload7"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Descargar canción 7"
+                    app:srcCompat="@drawable/download" />
+
+                <ImageButton
+                    android:id="@+id/share7"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Compartir" />
+
+                <ImageButton
+                    android:id="@+id/bluetooth7"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/bluetooth"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Bluetooth" />
+            </LinearLayout>
+
+            <!-- SONG 8 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/play8"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Reproducir canción 8"
+                    app:srcCompat="@drawable/play" />
+
+                <TextView
+                    android:id="@+id/tVSong8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="Olvida la amargura - Ranma"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iVDownload8"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Descargar canción 8"
+                    app:srcCompat="@drawable/download" />
+
+                <ImageButton
+                    android:id="@+id/share8"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Compartir" />
+
+                <ImageButton
+                    android:id="@+id/bluetooth8"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/bluetooth"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Bluetooth" />
+            </LinearLayout>
+
+            <!-- SONG 9 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/play9"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Reproducir canción 9"
+                    app:srcCompat="@drawable/play" />
+
+                <TextView
+                    android:id="@+id/tVSong9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="Pegasus Fantasy - Saint Seiya"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iVDownload9"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Descargar canción 9"
+                    app:srcCompat="@drawable/download" />
+
+                <ImageButton
+                    android:id="@+id/share9"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Compartir" />
+
+                <ImageButton
+                    android:id="@+id/bluetooth9"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/bluetooth"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Bluetooth" />
+            </LinearLayout>
+
+            <!-- SONG 10 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/play10"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Reproducir canción 10"
+                    app:srcCompat="@drawable/play" />
+
+                <TextView
+                    android:id="@+id/tVSong10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="We Are - One Piece"
+                    android:textColor="#3F51B5"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iVDownload10"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Descargar canción 10"
+                    app:srcCompat="@drawable/download" />
+
+                <ImageButton
+                    android:id="@+id/share10"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Compartir" />
+
+                <ImageButton
+                    android:id="@+id/bluetooth10"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/bluetooth"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Bluetooth" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
